@@ -7,10 +7,7 @@ public class Client {
         // so you need to check whether transfer allowed or not
         // because you have checked it already in first transfer,
         // we can just use clone
-
         Transfer tfr2 = tfr.clone();
         tfr2.setAmount(143.00);
-
-
     }
 }
