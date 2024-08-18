@@ -6,7 +6,6 @@ import practice.creationaldesignpattern.factory.loantypes.PersonalLoan;
 public class LoanFactory {
 
     public Loan getLoan(String loanType) {
-
         if ("home".equals(loanType)) {
             return new HomeLoan();
         } else if ("personal".equals(loanType)) {
@@ -14,8 +13,5 @@ public class LoanFactory {
         } else {
             throw new RuntimeException("Loan type not valid");
         }
-
-
     }
-
 }
