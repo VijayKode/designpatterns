@@ -9,7 +9,6 @@ public abstract class Loan {
     protected Loan(Bank bank) {
         this.bank = bank;
     }
-
     public abstract void getLoan(double loanAmount, double years);
 
 }

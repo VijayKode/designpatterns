@@ -14,6 +14,8 @@ public class PersonalLoan extends Loan {
     public void getLoan(double loanAmount, double years) {
         double interestRate = bank.getInterestRate("personal");
         double interestAmount = (loanAmount * years * interestRate) / 100;
-        System.out.println("Bank: "+bank.getBankName()+" Personal Loan granted, principal = "+loanAmount+" Total interest paid = "+ interestAmount);
+        System.out.println("Bank: "+bank.getBankName()+
+                " Personal Loan granted, principal = "
+                +loanAmount+" Total interest paid = "+ interestAmount);
     }
 }

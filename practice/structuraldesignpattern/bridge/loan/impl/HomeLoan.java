@@ -13,6 +13,8 @@ public class HomeLoan extends Loan {
     public void getLoan(double loanAmount, double years) {
         double interestRate = bank.getInterestRate("home");
         double interestAmount = (loanAmount * years * interestRate) / 100;
-        System.out.println("Bank: " +bank.getBankName()+" Home Loan granted, principal = "+loanAmount+" Total interest paid = "+ interestAmount);
+        System.out.println("Bank: " +bank.getBankName()+
+                " Home Loan granted, principal = "+loanAmount+
+                " Total interest paid = "+ interestAmount);
     }
 }
