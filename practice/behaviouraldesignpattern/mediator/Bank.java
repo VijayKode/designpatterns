@@ -1,6 +1,6 @@
 package practice.behaviouraldesignpattern.mediator;
 
 public interface Bank {
-    int withdraw(int money);
-    void desposit(int money);
+    boolean hasAvailableBalance(int requestMoney);
+    boolean requestMoney(int money);
 }
